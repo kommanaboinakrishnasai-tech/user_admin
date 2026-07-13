@@ -13,18 +13,32 @@ async function fetchData() {
 }
 function showdata(data) {
     let container = document.getElementById("container")
-    let item = document.createElement("div");
- item.innerHTML= data.map((student) => {
+    //let item = document.createElement("div");
+ container.innerHTML= data.map((student) => {
         return `
-        <p>Id : ${student.id}</p>
-        <p>Name : ${student.name}</p>
-        <button id='delete${student.id}'>Delete</button>
-        <button id='edit${student.id}'>Edit</button>
+        <div class="card">
+    <img src="${student.image}" alt="${student.name}">
+
+    <div class="details">
+        <h2>${student.name}</h2>
+        <p><strong>ID:</strong> ${student.id}</p>
+
+        <div class="buttons">
+            <button class="edit" id="edit${student.id}">
+                Edit
+            </button>
+
+            <button class="delete" id="delete${student.id}">
+                Delete
+            </button>
+        </div>
+    </div>
+</div>
         `
 
     }).join("");
     
-    container.appendChild(item);
+    //container.appendChild(item);
 data.forEach(student => {
     let deletebtn=document.getElementById(`delete${student.id}`)
     let editbtn=document.getElementById(`edit${student.id}`)

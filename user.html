@@ -3,15 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cartoon Gallery</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            padding:30px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:30px;
+            color:#333;
+        }
+
+        #container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:12px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,.15);
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:contain;
+        }
+
+        .details{
+            padding:15px;
+            text-align:center;
+        }
+
+        .details h2{
+            margin-bottom:10px;
+            color:#333;
+        }
+
+        .details p{
+            color:#666;
+        }
+
+        .btn{
+            display:block;
+            width:220px;
+            margin:0 auto 30px;
+            padding:12px;
+            text-align:center;
+            background:#4CAF50;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:#388E3C;
+        }
+
+    </style>
+
 </head>
 <body>
-    <div id="container"></div>
-    <input type="hidden" id="id">
-    <input type="text" placeholder="Enter name " id="name"><br>
-    <input type="text" placeholder="Enter Image link " id="image"><br>
-    <button onclick="savedata()">Save data</button>
-<script src="./details.js"></script>
-    
+
+<h1>🎭 Cartoon Gallery</h1>
+
+<a href="admin.html" class="btn">
+    Go To Admin Panel
+</a>
+
+<div id="container"></div>
+
+<script src="user.js"></script>
+
 </body>
 </html>
