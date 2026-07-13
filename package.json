@@ -1,0 +1,25 @@
+{
+  "name": "small_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "json-server --watch data.json --host 0.0.0.0 --port 3000",
+  "render-start": "json-server --watch data.json --host 0.0.0.0 --port $PORT"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kommanaboinakrishnasai-tech/user_admin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kommanaboinakrishnasai-tech/user_admin/issues"
+  },
+  "homepage": "https://github.com/kommanaboinakrishnasai-tech/user_admin#readme",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.15"
+  }
+}
