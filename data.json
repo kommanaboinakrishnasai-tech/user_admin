@@ -1,0 +1,29 @@
+{
+  "student": [
+    {
+      "name": "Sandeep sigh",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_hEuBaoB45w0RTS-mbfHcxHfrVQ9gsfRXNi6Rvu2pLJizg-cCbmZjjfg&s=10",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Abhisek",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt9jLwjpDQQ49Rz3r3j_BYm9WCAILYAlKj5YJ9OOyC-bD3m0G4IF94dPXf&s=10"
+    },
+    {
+      "name": "Madhu raj",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRRuNQxUNNAGyI-0knesAFZ0t_PpSdIAz9sKptJBNBZ51KGdFTwmURe5OZ&s=10",
+      "id": "3"
+    },
+    {
+      "name": "Srinithya rani",
+      "image": "jikghjmnzvjfhjhjg",
+      "id": "4"
+    },
+    {
+      "name": "kittu",
+      "image": "hgfjafhweityuihf",
+      "id": "4ZbRB31"
+    }
+  ]
+}
